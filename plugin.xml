@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-logcat"
+        version="0.0.1">
+
+  <name>Log Cat</name>
+  <description>A Cordova plugin to send logs to the developer</description>
+<engines>
+        <engine name="cordova" version=">=3.0.0" />
+</engines>
+
+    <js-module src="www/logcat.js" name="LogCat">
+    <clobbers target="plugin.logcat" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="LogCat">
+        <param name="android-package" value="org.apache.cordova.logcat.LogCat" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/LogCat.java" target-dir="src/org/apache/cordova/logcat" />
+  </platform>
+</plugin>
