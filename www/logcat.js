@@ -6,6 +6,6 @@
 
 var exec = require('cordova/exec');
 
-exports.sendLogs = function (arg0, success, error) {
-    exec(success, error, 'LogCat', 'sendLogs', [arg0]);
+exports.sendLogs = function (success, error) {
+    exec(success, error, 'LogCat', 'sendLogs', []);
 };
