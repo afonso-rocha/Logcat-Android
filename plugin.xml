@@ -5,14 +5,17 @@
 
   <name>Log Cat</name>
   <description>A Cordova plugin to send logs to the developer</description>
+        
 <engines>
         <engine name="cordova" version=">=3.0.0" />
 </engines>
 
-    <js-module src="www/logcat.js" name="LogCat">
+  <js-module src="www/logcat.js" name="LogCat">
     <clobbers target="plugin.logcat" />
   </js-module>
 
+  <dependency id="cordova-plugin-file"/>
+        
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="LogCat">
