@@ -22,6 +22,11 @@
       "version": ">=3.0.0"
     }
   ],
+  "cordova": {
+        "plugins": {
+            "cordova-plugin-file": {}
+        }
+  },
   "author": "Toto",
   "license": "MIT",
   "bugs": {
