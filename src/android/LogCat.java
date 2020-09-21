@@ -6,6 +6,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 import android.os.Environment;
+import android.app.Activity;
 
 
 public class LogCat extends CordovaPlugin {
@@ -19,7 +20,11 @@ public class LogCat extends CordovaPlugin {
 		    //System.out.println(Environment.getDataDirectory());
 		    //Environment.getExternalStorageDirectory()
 		    //Environment.getDownloadCacheDirectory()
-                File outputFile = new File("/storage/emulated/0/Android/data/com.outsystemscloud.totohugo.LogCat/files/",
+		    
+		Activity activity = cordova.getActivity();
+		String packageName = activity.getPackageName();    
+		    
+                File outputFile = new File("/storage/emulated/0/Android/data/"+packageName+"/files/",
                         "logcat.txt");
                 try {
                     Runtime.getRuntime().exec(
