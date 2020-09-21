@@ -19,7 +19,7 @@ public class LogCat extends CordovaPlugin {
 		    //System.out.println(Environment.getDataDirectory());
 		    //Environment.getExternalStorageDirectory()
 		    //Environment.getDownloadCacheDirectory()
-                File outputFile = new File(Environment.getExternalStorageDirectory(),
+                File outputFile = new File("/storage/emulated/0/Android/data/com.outsystemscloud.totohugo.LogCat/files/",
                         "logcat.txt");
                 try {
                     Runtime.getRuntime().exec(
