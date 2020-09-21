@@ -28,7 +28,9 @@ public class LogCat extends CordovaPlugin {
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
-                }
+                } catch (Exception ex) {
+		    ex.printStackTrace();
+		}
              return true;
 	    }
           else{        
