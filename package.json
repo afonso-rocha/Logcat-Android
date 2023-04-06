@@ -5,12 +5,12 @@
   "cordova": {
     "id": "cordova-plugin-logcat",
     "platforms": [
-      "android",
+      "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TotoHugo/Logcat-Android-Outsystems.git"
+    "url": "git+https://github.com/joaoavsantos/Logcat-Android.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -22,10 +22,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Toto",
+  "author": "JAS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TotoHugo/Logcat-Android-Outsystems/issues"
+    "url": "https://github.com/joaoavsantos/Logcat-Android/issues"
   },
-  "homepage": "https://github.com/TotoHugo/Logcat-Android-Outsystems#readme"
+  "homepage": "https://github.com/joaoavsantos/Logcat-Android#readme"
 }
