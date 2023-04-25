@@ -29,8 +29,10 @@ public class LogCat extends CordovaPlugin {
             try {
                 Log.i(TAG, "Thread started, opening logcat process");
                 try {
-                    process = Runtime.getRuntime().exec("logcat");
-                    logcatReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                    //process = Runtime.getRuntime().exec("logcat");
+                    //logcatReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			process = Runtime.getRuntime().exec("logcat logcat -b events");
+			logcatReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
                 } catch (IOException e) {
                     Log.i(TAG, "Failed to start logcat reading thread", e);
                     return;
