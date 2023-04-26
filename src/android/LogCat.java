@@ -49,7 +49,7 @@ public class LogCat extends CordovaPlugin {
                         line = logcatReader.readLine();
                         if (line == null) {
                             try {
-                                Thread.sleep(200);
+                                Thread.sleep(50);
                            } catch (InterruptedException e) {
                                 Log.i(TAG, "logcat thread interrupted", e);
                             }
