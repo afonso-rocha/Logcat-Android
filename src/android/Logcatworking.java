@@ -30,14 +30,6 @@ public class LogCat extends CordovaPlugin {
                     Runtime.getRuntime().exec(
                             "logcat -f " + outputFile.getAbsolutePath());
 			//System.out.println(outputFile.getAbsolutePath());
-			/*Process process = Runtime.getRuntime().exec("logcat logcat -b events");
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-			StringBuilder log=new StringBuilder();
-			String line;
-			while ((line = bufferedReader.readLine()) != null) {
-				Toast.makeText(LogReaderService.this, line, Toast.LENGTH_LONG).show();
-			}*/
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
